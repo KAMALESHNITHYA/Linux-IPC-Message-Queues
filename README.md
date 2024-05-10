@@ -24,7 +24,6 @@ Execute the C Program for the desired output.
 ## C program that receives a message from message queue and display them
 writer.c
 ```
-
 // C Program for Message Queue (Writer Process) 
 #include <stdio.h> 
 #include <sys/ipc.h> 
@@ -51,7 +50,7 @@ int main()
 	// display the message 
 	printf("Data send is : %s \n", message.mesg_text); 
 	return 0; 
-}
+} 
 ```
 
 reader.c
@@ -84,13 +83,13 @@ int main()
 	// to destroy the message queue
 	msgctl(msgid, IPC_RMID, NULL);
 	return 0;
- }
+}
 
 ```
 
 
 ## OUTPUT
-recent:///d919fe3c507b699e60d971ec662106f3
+![image](https://github.com/KAMALESHNITHYA/Linux-IPC-Message-Queues/assets/145743119/2e6756dc-c74d-4664-8f6d-2d9515fbbf79)
 
 
 
